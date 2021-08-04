@@ -7,18 +7,68 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-SemiBold.ttf">
+            <string>Comfortaa-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Blog-->
         <scene sceneID="Rub-Hk-7gy">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="dUq-PA-myM" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="dUq-PA-myM" customClass="BlogViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xKg-Ci-5ee">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nth-2U-Ns9">
+                                <rect key="frame" x="60" y="40" width="294" height="32"/>
+                                <segments>
+                                    <segment title="Blog"/>
+                                    <segment title="News"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="switchSegment:" destination="dUq-PA-myM" eventType="valueChanged" id="nrh-J0-k6F"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5dP-hB-3rj">
+                                <rect key="frame" x="0.0" y="81" width="414" height="606"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="DEp-At-l6Y" kind="embed" id="ieb-Hu-kal"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJw-5l-nMI">
+                                <rect key="frame" x="0.0" y="81" width="414" height="606"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="Kkt-U5-xvb" kind="embed" id="y3F-fg-S1u"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jMF-1v-Dse"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5dP-hB-3rj" firstAttribute="top" secondItem="Nth-2U-Ns9" secondAttribute="bottom" constant="10" id="3dn-Io-yCq"/>
+                            <constraint firstItem="Nth-2U-Ns9" firstAttribute="leading" secondItem="jMF-1v-Dse" secondAttribute="leading" constant="60" id="4bE-SK-rOp"/>
+                            <constraint firstItem="jMF-1v-Dse" firstAttribute="trailing" secondItem="lJw-5l-nMI" secondAttribute="trailing" id="5kT-z9-pbF"/>
+                            <constraint firstItem="5dP-hB-3rj" firstAttribute="leading" secondItem="jMF-1v-Dse" secondAttribute="leading" id="A9l-qo-jud"/>
+                            <constraint firstItem="lJw-5l-nMI" firstAttribute="top" secondItem="Nth-2U-Ns9" secondAttribute="bottom" constant="10" id="Lte-Vx-Ebe"/>
+                            <constraint firstItem="jMF-1v-Dse" firstAttribute="trailing" secondItem="5dP-hB-3rj" secondAttribute="trailing" id="Opx-GL-nHr"/>
+                            <constraint firstItem="lJw-5l-nMI" firstAttribute="leading" secondItem="jMF-1v-Dse" secondAttribute="leading" id="Pw8-M5-3Wn"/>
+                            <constraint firstItem="Nth-2U-Ns9" firstAttribute="top" secondItem="jMF-1v-Dse" secondAttribute="top" constant="40" id="QrS-8e-5np"/>
+                            <constraint firstItem="jMF-1v-Dse" firstAttribute="bottom" secondItem="5dP-hB-3rj" secondAttribute="bottom" id="VnK-d0-eSW"/>
+                            <constraint firstItem="jMF-1v-Dse" firstAttribute="bottom" secondItem="lJw-5l-nMI" secondAttribute="bottom" id="bXV-xr-b1f"/>
+                            <constraint firstItem="jMF-1v-Dse" firstAttribute="trailing" secondItem="Nth-2U-Ns9" secondAttribute="trailing" constant="60" id="vFl-dq-t0z"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Blog" image="blog" id="jJq-zM-Pi6"/>
+                    <connections>
+                        <outlet property="blogView" destination="lJw-5l-nMI" id="rDg-Bl-aC6"/>
+                        <outlet property="newsView" destination="5dP-hB-3rj" id="vIc-Sw-hnT"/>
+                        <outlet property="segment" destination="Nth-2U-Ns9" id="5bX-fK-2od"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sww-6p-pi0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -27,12 +77,27 @@
         <!--Home-->
         <scene sceneID="u6I-o6-Due">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="ny7-CM-x6a" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="ny7-CM-x6a" customClass="ViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V0h-SH-Ilu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkX-ko-DvI">
+                                <rect key="frame" x="169.66666666666666" y="354" width="74.666666666666657" height="28"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dTj-9E-5SU"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZkX-ko-DvI" firstAttribute="centerY" secondItem="V0h-SH-Ilu" secondAttribute="centerY" id="VMY-SI-sl1"/>
+                            <constraint firstItem="ZkX-ko-DvI" firstAttribute="centerX" secondItem="V0h-SH-Ilu" secondAttribute="centerX" id="cUt-aM-H57"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="Rb8-fm-x3g"/>
                 </viewController>
@@ -83,14 +148,72 @@
                     <view key="view" contentMode="scaleToFill" id="BkD-Ec-iet">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEp-zO-qLT">
+                                <rect key="frame" x="168" y="354" width="78" height="28"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="24"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Wmp-vR-YoH"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WEp-zO-qLT" firstAttribute="centerX" secondItem="BkD-Ec-iet" secondAttribute="centerX" id="nM3-51-gUD"/>
+                            <constraint firstItem="WEp-zO-qLT" firstAttribute="centerY" secondItem="BkD-Ec-iet" secondAttribute="centerY" id="qQk-ky-hYK"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" id="kzB-io-vd2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rB-VG-Adj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="570" y="457"/>
+            <point key="canvasLocation" x="569.56521739130437" y="456.52173913043481"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="utV-4d-DoC">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Kkt-U5-xvb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G4A-D6-Lqa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="606"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kh2-ox-drt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-991" y="1109"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YSw-dB-pWM">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="DEp-At-l6Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VRt-BG-fWa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="606"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY5-Bx-C4r">
+                                <rect key="frame" x="174.66666666666666" y="289" width="65" height="28"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="24"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YY5-Bx-C4r" firstAttribute="centerX" secondItem="VRt-BG-fWa" secondAttribute="centerX" id="3gx-t9-EA4"/>
+                            <constraint firstItem="YY5-Bx-C4r" firstAttribute="centerY" secondItem="VRt-BG-fWa" secondAttribute="centerY" id="Wlu-9x-uf4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h1t-H1-1k0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-325" y="1109"/>
         </scene>
     </scenes>
     <resources>
