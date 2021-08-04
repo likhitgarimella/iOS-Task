@@ -13,6 +13,11 @@
 		022458B926BACE6B00EF4FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022458B726BACE6B00EF4FE5 /* Main.storyboard */; };
 		022458BB26BACE6C00EF4FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022458BA26BACE6C00EF4FE5 /* Assets.xcassets */; };
 		022458BE26BACE6C00EF4FE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022458BC26BACE6C00EF4FE5 /* LaunchScreen.storyboard */; };
+		022458CB26BAE34600EF4FE5 /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 022458C626BAE34600EF4FE5 /* Comfortaa-Medium.ttf */; };
+		022458CC26BAE34600EF4FE5 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 022458C726BAE34600EF4FE5 /* Comfortaa-Regular.ttf */; };
+		022458CD26BAE34600EF4FE5 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 022458C826BAE34600EF4FE5 /* Comfortaa-Bold.ttf */; };
+		022458CE26BAE34600EF4FE5 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 022458C926BAE34600EF4FE5 /* Comfortaa-Light.ttf */; };
+		022458CF26BAE34600EF4FE5 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 022458CA26BAE34600EF4FE5 /* Comfortaa-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		022458BA26BACE6C00EF4FE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		022458BD26BACE6C00EF4FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		022458BF26BACE6C00EF4FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		022458C626BAE34600EF4FE5 /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Medium.ttf"; sourceTree = "<group>"; };
+		022458C726BAE34600EF4FE5 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		022458C826BAE34600EF4FE5 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		022458C926BAE34600EF4FE5 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		022458CA26BAE34600EF4FE5 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,7 @@
 		022458A526BACE6B00EF4FE5 = {
 			isa = PBXGroup;
 			children = (
+				022458C526BAE33700EF4FE5 /* Fonts */,
 				022458B026BACE6B00EF4FE5 /* iOS-Task */,
 				022458AF26BACE6B00EF4FE5 /* Products */,
 			);
@@ -65,6 +76,18 @@
 				022458BF26BACE6C00EF4FE5 /* Info.plist */,
 			);
 			path = "iOS-Task";
+			sourceTree = "<group>";
+		};
+		022458C526BAE33700EF4FE5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				022458C826BAE34600EF4FE5 /* Comfortaa-Bold.ttf */,
+				022458C926BAE34600EF4FE5 /* Comfortaa-Light.ttf */,
+				022458C626BAE34600EF4FE5 /* Comfortaa-Medium.ttf */,
+				022458C726BAE34600EF4FE5 /* Comfortaa-Regular.ttf */,
+				022458CA26BAE34600EF4FE5 /* Comfortaa-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +149,11 @@
 			files = (
 				022458BE26BACE6C00EF4FE5 /* LaunchScreen.storyboard in Resources */,
 				022458BB26BACE6C00EF4FE5 /* Assets.xcassets in Resources */,
+				022458CF26BAE34600EF4FE5 /* Comfortaa-SemiBold.ttf in Resources */,
+				022458CD26BAE34600EF4FE5 /* Comfortaa-Bold.ttf in Resources */,
+				022458CB26BAE34600EF4FE5 /* Comfortaa-Medium.ttf in Resources */,
+				022458CE26BAE34600EF4FE5 /* Comfortaa-Light.ttf in Resources */,
+				022458CC26BAE34600EF4FE5 /* Comfortaa-Regular.ttf in Resources */,
 				022458B926BACE6B00EF4FE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
