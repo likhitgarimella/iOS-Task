@@ -58,10 +58,10 @@
 			children = (
 				022458B126BACE6B00EF4FE5 /* AppDelegate.swift */,
 				022458B326BACE6B00EF4FE5 /* SceneDelegate.swift */,
-				022458B526BACE6B00EF4FE5 /* ViewController.swift */,
+				022458BC26BACE6C00EF4FE5 /* LaunchScreen.storyboard */,
 				022458B726BACE6B00EF4FE5 /* Main.storyboard */,
 				022458BA26BACE6C00EF4FE5 /* Assets.xcassets */,
-				022458BC26BACE6C00EF4FE5 /* LaunchScreen.storyboard */,
+				022458B526BACE6B00EF4FE5 /* ViewController.swift */,
 				022458BF26BACE6C00EF4FE5 /* Info.plist */,
 			);
 			path = "iOS-Task";
@@ -289,14 +289,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77BWS8985H;
 				INFOPLIST_FILE = "iOS-Task/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.likhitgarimella.iOS-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,14 +310,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77BWS8985H;
 				INFOPLIST_FILE = "iOS-Task/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.likhitgarimella.iOS-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
