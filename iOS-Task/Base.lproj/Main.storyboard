@@ -217,25 +217,60 @@
             </objects>
             <point key="canvasLocation" x="569.56521739130437" y="456.52173913043481"/>
         </scene>
-        <!--View Controller-->
+        <!--Blogs View Controller-->
         <scene sceneID="utV-4d-DoC">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Kkt-U5-xvb" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Kkt-U5-xvb" customClass="BlogsViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G4A-D6-Lqa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="606"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iKh-Bq-VK8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="606"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BlogCell" rowHeight="140" id="uLT-mE-Mvq" customClass="BlogCell" customModule="iOS_Task" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uLT-mE-Mvq" id="4aj-oT-FDF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Kkt-U5-xvb" id="6Ur-qS-Owe"/>
+                                    <outlet property="delegate" destination="Kkt-U5-xvb" id="bJa-Pn-MoH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="l0c-No-ggk"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l0c-No-ggk" firstAttribute="trailing" secondItem="iKh-Bq-VK8" secondAttribute="trailing" id="1ut-tA-xmo"/>
+                            <constraint firstItem="iKh-Bq-VK8" firstAttribute="leading" secondItem="l0c-No-ggk" secondAttribute="leading" id="6vG-9t-x8a"/>
+                            <constraint firstItem="iKh-Bq-VK8" firstAttribute="top" secondItem="l0c-No-ggk" secondAttribute="top" id="PCG-3U-sfT"/>
+                            <constraint firstItem="l0c-No-ggk" firstAttribute="bottom" secondItem="iKh-Bq-VK8" secondAttribute="bottom" id="aBs-Db-PdI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="iKh-Bq-VK8" id="8zY-HR-mXY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kh2-ox-drt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-991" y="1109"/>
         </scene>
-        <!--View Controller-->
+        <!--News View Controller-->
         <scene sceneID="YSw-dB-pWM">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="DEp-At-l6Y" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="DEp-At-l6Y" customClass="NewsViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VRt-BG-fWa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="606"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

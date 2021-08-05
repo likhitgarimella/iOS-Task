@@ -26,6 +26,7 @@
 		022458DB26BB8DE800EF4FE5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022458DA26BB8DE800EF4FE5 /* ProfileViewController.swift */; };
 		022458E026BBA0C200EF4FE5 /* GraphOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022458DF26BBA0C200EF4FE5 /* GraphOneViewController.swift */; };
 		022458E226BBA0DE00EF4FE5 /* GraphTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022458E126BBA0DE00EF4FE5 /* GraphTwoViewController.swift */; };
+		022458E426BBABAE00EF4FE5 /* BlogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022458E326BBABAE00EF4FE5 /* BlogCell.swift */; };
 		897ECB417E1C28ADCBD9DE7E /* Pods_iOS_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4FD90F7DD941A9751982E9 /* Pods_iOS_Task.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		022458DA26BB8DE800EF4FE5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		022458DF26BBA0C200EF4FE5 /* GraphOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphOneViewController.swift; sourceTree = "<group>"; };
 		022458E126BBA0DE00EF4FE5 /* GraphTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTwoViewController.swift; sourceTree = "<group>"; };
+		022458E326BBABAE00EF4FE5 /* BlogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCell.swift; sourceTree = "<group>"; };
 		5F4FD90F7DD941A9751982E9 /* Pods_iOS_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA2AC22E41C0CAB1C29DBEE /* Pods-iOS-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Task.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Task/Pods-iOS-Task.debug.xcconfig"; sourceTree = "<group>"; };
 		CFF85441A87118576C16983B /* Pods-iOS-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Task.release.xcconfig"; path = "Target Support Files/Pods-iOS-Task/Pods-iOS-Task.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				022458E126BBA0DE00EF4FE5 /* GraphTwoViewController.swift */,
 				022458D026BB0EE600EF4FE5 /* BlogViewController.swift */,
 				022458D626BB8D4900EF4FE5 /* BlogsViewController.swift */,
+				022458E326BBABAE00EF4FE5 /* BlogCell.swift */,
 				022458D826BB8DB600EF4FE5 /* NewsViewController.swift */,
 				022458DA26BB8DE800EF4FE5 /* ProfileViewController.swift */,
 				022458BF26BACE6C00EF4FE5 /* Info.plist */,
@@ -262,6 +265,7 @@
 				022458B226BACE6B00EF4FE5 /* AppDelegate.swift in Sources */,
 				022458D726BB8D4900EF4FE5 /* BlogsViewController.swift in Sources */,
 				022458D526BB8D1B00EF4FE5 /* GraphViewController.swift in Sources */,
+				022458E426BBABAE00EF4FE5 /* BlogCell.swift in Sources */,
 				022458D126BB0EE600EF4FE5 /* BlogViewController.swift in Sources */,
 				022458E026BBA0C200EF4FE5 /* GraphOneViewController.swift in Sources */,
 				022458DB26BB8DE800EF4FE5 /* ProfileViewController.swift in Sources */,
