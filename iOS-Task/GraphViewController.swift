@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import SwiftUI
-import SwiftUICharts
 
 class GraphViewController: UIViewController {
     
@@ -18,4 +16,4 @@ class GraphViewController: UIViewController {
         
     }
     
-}   // #22
+}   // #20
