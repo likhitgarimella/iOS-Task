@@ -1,5 +1,5 @@
 //
-//  DetailViewController.swift
+//  DetailContViewController.swift
 //  iOS-Task
 //
 //  Created by Likhit Garimella on 05/08/21.
@@ -7,15 +7,13 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailContViewController: UIViewController {
     
-    @IBOutlet var pop: UIView!
-    @IBOutlet var contView: UIView!
+    @IBOutlet var clockView: UIView!
     
     func Properties() {
         
-        pop.layer.cornerRadius = 40
-        contView.layer.cornerRadius = 40
+        clockView.layer.cornerRadius = 8
         
     }
     
@@ -26,4 +24,4 @@ class DetailViewController: UIViewController {
         
     }
     
-}   // #30
+}   // #28
