@@ -20,6 +20,10 @@
 		022458CF26BAE34600EF4FE5 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 022458CA26BAE34600EF4FE5 /* Comfortaa-SemiBold.ttf */; };
 		022458D126BB0EE600EF4FE5 /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022458D026BB0EE600EF4FE5 /* BlogViewController.swift */; };
 		022458D326BB0F0500EF4FE5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022458D226BB0F0500EF4FE5 /* Extensions.swift */; };
+		022458D526BB8D1B00EF4FE5 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022458D426BB8D1B00EF4FE5 /* GraphViewController.swift */; };
+		022458D726BB8D4900EF4FE5 /* BlogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022458D626BB8D4900EF4FE5 /* BlogsViewController.swift */; };
+		022458D926BB8DB600EF4FE5 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022458D826BB8DB600EF4FE5 /* NewsViewController.swift */; };
+		022458DB26BB8DE800EF4FE5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022458DA26BB8DE800EF4FE5 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		022458CA26BAE34600EF4FE5 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
 		022458D026BB0EE600EF4FE5 /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
 		022458D226BB0F0500EF4FE5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		022458D426BB8D1B00EF4FE5 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		022458D626BB8D4900EF4FE5 /* BlogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogsViewController.swift; sourceTree = "<group>"; };
+		022458D826BB8DB600EF4FE5 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		022458DA26BB8DE800EF4FE5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +85,11 @@
 				022458B726BACE6B00EF4FE5 /* Main.storyboard */,
 				022458BA26BACE6C00EF4FE5 /* Assets.xcassets */,
 				022458B526BACE6B00EF4FE5 /* ViewController.swift */,
+				022458D426BB8D1B00EF4FE5 /* GraphViewController.swift */,
 				022458D026BB0EE600EF4FE5 /* BlogViewController.swift */,
+				022458D626BB8D4900EF4FE5 /* BlogsViewController.swift */,
+				022458D826BB8DB600EF4FE5 /* NewsViewController.swift */,
+				022458DA26BB8DE800EF4FE5 /* ProfileViewController.swift */,
 				022458BF26BACE6C00EF4FE5 /* Info.plist */,
 				022458D226BB0F0500EF4FE5 /* Extensions.swift */,
 			);
@@ -174,8 +186,12 @@
 				022458D326BB0F0500EF4FE5 /* Extensions.swift in Sources */,
 				022458B626BACE6B00EF4FE5 /* ViewController.swift in Sources */,
 				022458B226BACE6B00EF4FE5 /* AppDelegate.swift in Sources */,
+				022458D726BB8D4900EF4FE5 /* BlogsViewController.swift in Sources */,
+				022458D526BB8D1B00EF4FE5 /* GraphViewController.swift in Sources */,
 				022458D126BB0EE600EF4FE5 /* BlogViewController.swift in Sources */,
+				022458DB26BB8DE800EF4FE5 /* ProfileViewController.swift in Sources */,
 				022458B426BACE6B00EF4FE5 /* SceneDelegate.swift in Sources */,
+				022458D926BB8DB600EF4FE5 /* NewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
