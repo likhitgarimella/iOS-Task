@@ -112,10 +112,55 @@
                     <view key="view" contentMode="scaleToFill" id="LCf-Ie-ycI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EzU-JA-IBL">
+                                <rect key="frame" x="60" y="40" width="294" height="32"/>
+                                <segments>
+                                    <segment title="Graph-1"/>
+                                    <segment title="Graph-2"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="switchSegment:" destination="LjV-LC-Sph" eventType="valueChanged" id="vSR-L0-5vr"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bmg-KO-hdq">
+                                <rect key="frame" x="0.0" y="81" width="414" height="606"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="541-gU-Ci5" kind="embed" id="7lH-B9-rCt"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYt-mW-mJT">
+                                <rect key="frame" x="0.0" y="81" width="414" height="606"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="lqY-MJ-OKX" kind="embed" id="Cop-oD-lkF"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="byi-NH-Uyr"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gYt-mW-mJT" firstAttribute="top" secondItem="EzU-JA-IBL" secondAttribute="bottom" constant="10" id="0qk-dy-MdZ"/>
+                            <constraint firstItem="EzU-JA-IBL" firstAttribute="leading" secondItem="byi-NH-Uyr" secondAttribute="leading" constant="60" id="1it-ME-kxE"/>
+                            <constraint firstItem="Bmg-KO-hdq" firstAttribute="top" secondItem="EzU-JA-IBL" secondAttribute="bottom" constant="10" id="P4k-rO-qwg"/>
+                            <constraint firstItem="byi-NH-Uyr" firstAttribute="trailing" secondItem="gYt-mW-mJT" secondAttribute="trailing" id="RPV-UZ-tbN"/>
+                            <constraint firstItem="byi-NH-Uyr" firstAttribute="trailing" secondItem="Bmg-KO-hdq" secondAttribute="trailing" id="SSy-0G-GWs"/>
+                            <constraint firstItem="byi-NH-Uyr" firstAttribute="trailing" secondItem="EzU-JA-IBL" secondAttribute="trailing" constant="60" id="Yr7-sR-0FE"/>
+                            <constraint firstItem="gYt-mW-mJT" firstAttribute="leading" secondItem="byi-NH-Uyr" secondAttribute="leading" id="bZP-O5-BTB"/>
+                            <constraint firstItem="byi-NH-Uyr" firstAttribute="bottom" secondItem="gYt-mW-mJT" secondAttribute="bottom" id="fnd-IK-a8r"/>
+                            <constraint firstItem="EzU-JA-IBL" firstAttribute="top" secondItem="byi-NH-Uyr" secondAttribute="top" constant="40" id="ohg-Ac-R8e"/>
+                            <constraint firstItem="Bmg-KO-hdq" firstAttribute="leading" secondItem="byi-NH-Uyr" secondAttribute="leading" id="vdT-0Q-TtR"/>
+                            <constraint firstItem="byi-NH-Uyr" firstAttribute="bottom" secondItem="Bmg-KO-hdq" secondAttribute="bottom" id="yUe-Fu-8Qo"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Graph" image="graph" id="PJ3-Yc-j6w"/>
+                    <connections>
+                        <outlet property="oneView" destination="gYt-mW-mJT" id="Kra-zF-gww"/>
+                        <outlet property="segment" destination="EzU-JA-IBL" id="AcK-va-Orl"/>
+                        <outlet property="twoView" destination="Bmg-KO-hdq" id="lME-iG-E19"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PA0-Vo-JTM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,6 +224,7 @@
                     <view key="view" contentMode="scaleToFill" id="G4A-D6-Lqa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="606"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="l0c-No-ggk"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
@@ -204,6 +250,7 @@
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="iTD-6p-Qu6"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YY5-Bx-C4r" firstAttribute="centerX" secondItem="VRt-BG-fWa" secondAttribute="centerX" id="3gx-t9-EA4"/>
@@ -214,6 +261,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1t-H1-1k0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-325" y="1109"/>
+        </scene>
+        <!--Graph Two View Controller-->
+        <scene sceneID="LgN-TJ-s1Q">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="541-gU-Ci5" customClass="GraphTwoViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yIa-Dm-dmD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="606"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="58P-Oj-9ru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1461" y="-871"/>
+        </scene>
+        <!--Graph One View Controller-->
+        <scene sceneID="4xM-5c-sOt">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="lqY-MJ-OKX" customClass="GraphOneViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fjG-xK-qNt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="606"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="szR-oB-tve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807" y="-871"/>
         </scene>
     </scenes>
     <resources>
