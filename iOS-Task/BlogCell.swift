@@ -9,6 +9,8 @@ import UIKit
 
 class BlogCell: UITableViewCell {
     
+    @IBOutlet var myImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -19,4 +21,4 @@ class BlogCell: UITableViewCell {
         
     }
     
-}   // #23
+}   // #25
