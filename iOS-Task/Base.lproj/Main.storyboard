@@ -8,6 +8,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+        <array key="Comfortaa-Regular.ttf">
+            <string>Comfortaa-Regular</string>
+        </array>
         <array key="Comfortaa-SemiBold.ttf">
             <string>Comfortaa-SemiBold</string>
         </array>
@@ -460,26 +466,26 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="H7Z-R6-2mq" customClass="DetailContViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6xB-qT-ccI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHH-68-ekW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PaT-WO-stJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best goals from the Friday's game " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8OQ-xE-AHe">
-                                                <rect key="frame" x="14" y="7.6666666666666679" width="286.33333333333331" height="19"/>
+                                                <rect key="frame" x="14" y="7.6666666666666679" width="287" height="19"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKw-mR-svP">
-                                                <rect key="frame" x="346" y="0.0" width="56" height="34"/>
+                                                <rect key="frame" x="344" y="0.0" width="56" height="34"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="Twy-Kk-EQJ">
                                                         <rect key="frame" x="4.0000000000000009" y="11.333333333333332" width="11.333333333333336" height="11.333333333333332"/>
@@ -505,14 +511,34 @@
                                                     <constraint firstItem="Qvq-uv-lnj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Twy-Kk-EQJ" secondAttribute="trailing" constant="5.9999999999999787" id="qpk-uP-Mcq"/>
                                                 </constraints>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqb-uZ-mh3">
+                                                <rect key="frame" x="14" y="46.666666666666686" width="386" height="797.33333333333326"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <mutableString key="text">When a charge is placed in a location with a non-zero electric field, a force will act on it. The magnitude of this force is given by Coulomb’s law. If the charge moves, the electric field would be doing work on the electric charge. Thus we can speak of electric potential at a certain point in space, which is equal to the work done by an external agent in carrying a unit of positive charge from an arbitrarily chosen reference point to that point without any acceleration and is typically measured in volts.
+
+Electrical phenomena have been studied since antiquity, though progress in theoretical understanding remained slow until the seventeenth and eighteenth centuries. The theory of electromagnetism was developed in the 19th century, and by the end of that century electricity was being put to industrial and residential use by electrical engineers. The rapid expansion in electrical technology at this time transformed industry and society, becoming a driving force for the Second Industrial Revolution. Electricity’s extraordinary versatility means it can be put to an almost limitless set of applications which include transport, heating, lighting, communications, and computation.
+
+When a charge is placed in a location with a non-zero electric field, a force will act on it. The magnitude of this force is given by Coulomb’s law. If the charge moves, the electric field would be doing work on the electric charge. Thus we can speak of electric potential at a certain point in space, which is equal to the work done by an external agent in carrying a unit of positive charge from an arbitrarily chosen reference point to that point without any acceleration and is typically measured in volts.
+
+Electrical phenomena have been studied since antiquity, though progress in theoretical understanding remained slow until the seventeenth and eighteenth centuries. The theory of electromagnetism was developed in the 19th century, and by the end of that century electricity was being put to industrial and residential use by electrical engineers. The rapid expansion in electrical technology at this time transformed industry and society, becoming a driving force for the Second Industrial Revolution. Electricity’s extraordinary versatility means it can be put to an almost limitless set of applications which include transport, heating, lighting, communications, and computation.</mutableString>
+                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="14"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="lKw-mR-svP" secondAttribute="trailing" constant="12" id="1DI-tU-f45"/>
+                                            <constraint firstAttribute="trailing" secondItem="lKw-mR-svP" secondAttribute="trailing" constant="14" id="1DI-tU-f45"/>
                                             <constraint firstItem="8OQ-xE-AHe" firstAttribute="centerY" secondItem="lKw-mR-svP" secondAttribute="centerY" id="1WL-I7-sjB"/>
+                                            <constraint firstItem="Fqb-uZ-mh3" firstAttribute="leading" secondItem="PaT-WO-stJ" secondAttribute="leading" constant="14" id="92S-EK-yJU"/>
+                                            <constraint firstItem="Fqb-uZ-mh3" firstAttribute="top" secondItem="8OQ-xE-AHe" secondAttribute="bottom" constant="20" id="C6O-3R-8kA"/>
                                             <constraint firstItem="8OQ-xE-AHe" firstAttribute="leading" secondItem="PaT-WO-stJ" secondAttribute="leading" constant="14" id="EW4-q4-5OU"/>
                                             <constraint firstItem="lKw-mR-svP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8OQ-xE-AHe" secondAttribute="trailing" constant="8" symbolic="YES" id="JEE-3R-jjq"/>
+                                            <constraint firstAttribute="bottom" secondItem="Fqb-uZ-mh3" secondAttribute="bottom" constant="156" id="Oxz-a7-DMN"/>
+                                            <constraint firstAttribute="trailing" secondItem="Fqb-uZ-mh3" secondAttribute="trailing" constant="14" id="eub-cy-EhF"/>
                                             <constraint firstItem="lKw-mR-svP" firstAttribute="top" secondItem="PaT-WO-stJ" secondAttribute="top" id="jkr-nJ-YQR"/>
                                         </constraints>
                                     </view>
@@ -537,7 +563,7 @@
                             <constraint firstItem="ZHH-68-ekW" firstAttribute="leading" secondItem="6xB-qT-ccI" secondAttribute="leading" id="q02-37-Zxq"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="700"/>
+                    <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="clockView" destination="lKw-mR-svP" id="L7S-Mk-mTp"/>
                     </connections>
