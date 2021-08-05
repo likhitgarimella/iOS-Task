@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18121" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rfu-Rl-DeC">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
@@ -18,11 +18,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="dUq-PA-myM" customClass="BlogViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xKg-Ci-5ee">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nth-2U-Ns9">
-                                <rect key="frame" x="60" y="40" width="294" height="32"/>
+                                <rect key="frame" x="60" y="84" width="294" height="32"/>
                                 <segments>
                                     <segment title="Blog"/>
                                     <segment title="News"/>
@@ -33,14 +33,14 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5dP-hB-3rj">
-                                <rect key="frame" x="0.0" y="81" width="414" height="606"/>
+                                <rect key="frame" x="0.0" y="125" width="414" height="688"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="DEp-At-l6Y" kind="embed" id="ieb-Hu-kal"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJw-5l-nMI">
-                                <rect key="frame" x="0.0" y="81" width="414" height="606"/>
+                                <rect key="frame" x="0.0" y="125" width="414" height="688"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="Kkt-U5-xvb" kind="embed" id="y3F-fg-S1u"/>
@@ -79,11 +79,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="ny7-CM-x6a" customClass="ViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V0h-SH-Ilu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkX-ko-DvI">
-                                <rect key="frame" x="169.66666666666666" y="354" width="74.666666666666657" height="28"/>
+                                <rect key="frame" x="169.66666666666666" y="434" width="75" height="28"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="24"/>
@@ -110,11 +110,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="LjV-LC-Sph" customClass="GraphViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LCf-Ie-ycI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EzU-JA-IBL">
-                                <rect key="frame" x="60" y="40" width="294" height="32"/>
+                                <rect key="frame" x="60" y="84" width="294" height="32"/>
                                 <segments>
                                     <segment title="Graph-1"/>
                                     <segment title="Graph-2"/>
@@ -125,14 +125,14 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bmg-KO-hdq">
-                                <rect key="frame" x="0.0" y="81" width="414" height="606"/>
+                                <rect key="frame" x="0.0" y="285" width="414" height="688"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="541-gU-Ci5" kind="embed" id="7lH-B9-rCt"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYt-mW-mJT">
-                                <rect key="frame" x="0.0" y="81" width="414" height="606"/>
+                                <rect key="frame" x="0.0" y="285" width="414" height="688"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="lqY-MJ-OKX" kind="embed" id="Cop-oD-lkF"/>
@@ -191,11 +191,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="vC4-CM-9MM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BkD-Ec-iet">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEp-zO-qLT">
-                                <rect key="frame" x="168" y="354" width="78" height="28"/>
+                                <rect key="frame" x="168" y="434" width="78" height="28"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="24"/>
@@ -222,11 +222,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Kkt-U5-xvb" customClass="BlogsViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G4A-D6-Lqa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="606"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="688"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iKh-Bq-VK8">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="606"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="644"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -316,27 +316,51 @@
             <objects>
                 <viewController storyboardIdentifier="DetailViewController" id="xdd-Sc-Wmo" customClass="DetailViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yaC-UN-Z2L">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mask" translatesAutoresizingMaskIntoConstraints="NO" id="VeQ-AE-fli">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGP-i2-ufR">
+                                <rect key="frame" x="0.0" y="472" width="414" height="424"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="424" id="vxC-LN-qwT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="OAW-83-vOA"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VeQ-AE-fli" firstAttribute="leading" secondItem="OAW-83-vOA" secondAttribute="leading" id="7AM-bh-lat"/>
+                            <constraint firstItem="OAW-83-vOA" firstAttribute="trailing" secondItem="uGP-i2-ufR" secondAttribute="trailing" id="RTu-Cw-tNy"/>
+                            <constraint firstItem="OAW-83-vOA" firstAttribute="bottom" secondItem="VeQ-AE-fli" secondAttribute="bottom" constant="-34" id="YQb-Ji-mYf"/>
+                            <constraint firstItem="uGP-i2-ufR" firstAttribute="leading" secondItem="OAW-83-vOA" secondAttribute="leading" id="p4o-YC-x1e"/>
+                            <constraint firstItem="OAW-83-vOA" firstAttribute="bottom" secondItem="uGP-i2-ufR" secondAttribute="bottom" constant="-34" id="rso-7q-KK1"/>
+                            <constraint firstItem="OAW-83-vOA" firstAttribute="trailing" secondItem="VeQ-AE-fli" secondAttribute="trailing" id="xsj-fX-f7p"/>
+                            <constraint firstItem="VeQ-AE-fli" firstAttribute="top" secondItem="OAW-83-vOA" secondAttribute="top" constant="-44" id="yRe-MS-yJm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1pO-FP-gpV"/>
+                    <connections>
+                        <outlet property="pop" destination="uGP-i2-ufR" id="aDK-zX-Crz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84f-sU-bxT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-991" y="1818"/>
+            <point key="canvasLocation" x="-991.304347826087" y="1817.4107142857142"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="YSw-dB-pWM">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="DEp-At-l6Y" customClass="NewsViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VRt-BG-fWa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="606"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="688"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY5-Bx-C4r">
-                                <rect key="frame" x="174.66666666666666" y="289" width="65" height="28"/>
+                                <rect key="frame" x="174.66666666666666" y="330" width="65" height="28"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="24"/>
@@ -362,11 +386,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="541-gU-Ci5" customClass="GraphTwoViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yIa-Dm-dmD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="606"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="688"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscriber Benefit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yab-Iz-cFb">
-                                <rect key="frame" x="90" y="40" width="234" height="28"/>
+                                <rect key="frame" x="90" y="84" width="234" height="28"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="24"/>
@@ -391,11 +415,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="lqY-MJ-OKX" customClass="GraphOneViewController" customModule="iOS_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fjG-xK-qNt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="606"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="688"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous Bills" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twa-iQ-qek">
-                                <rect key="frame" x="124.66666666666669" y="40" width="165" height="28"/>
+                                <rect key="frame" x="124.66666666666669" y="84" width="165" height="28"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="24"/>
@@ -420,6 +444,7 @@
         <image name="blog" width="24" height="24"/>
         <image name="graph" width="24" height="24"/>
         <image name="home" width="24" height="24"/>
+        <image name="mask" width="360" height="720"/>
         <image name="profile" width="24" height="24"/>
     </resources>
 </document>

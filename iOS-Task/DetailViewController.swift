@@ -9,11 +9,19 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet weak var pop: UIView!
+    
+    func Properties() {
         
-        
+        pop.layer.cornerRadius = 40
         
     }
     
-}   // #20
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        Properties()
+        
+    }
+    
+}   // #28
